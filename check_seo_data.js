@@ -38,6 +38,8 @@ function countOutlinks() {
         uniqueOutlinksSheet.getRange(index + 2, lastUniqueOutlinkColumn).setValue("Fehler");
       }
     }
+    // Pausieren für 143 Millisekunden (1 Sekunde / 7 Anfragen = ~143 Millisekunden)
+    Utilities.sleep(143);
   });
 }
 
@@ -72,5 +74,7 @@ function checkResponseTimes() {
         responseTimesSheet.getRange(index + 2, lastResponseTimeColumn).setValue("Fehler");
       }
     }
+    // Pausieren für 143 Millisekunden (1 Sekunde / 7 Anfragen = ~143 Millisekunden)
+    Utilities.sleep(143);
   });
 }
